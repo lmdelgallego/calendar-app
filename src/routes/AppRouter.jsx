@@ -8,7 +8,7 @@ const AuthStatus = {
 }
 
 export const AppRouter = () => {
-  const authStatus = AuthStatus.notAuthenticated;
+  const authStatus = AuthStatus.authenticated;
   console.log(authStatus)
   return (
     <Routes>
