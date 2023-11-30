@@ -1,6 +1,6 @@
 import { Calendar } from 'react-big-calendar'
 import dayjs from 'dayjs'
-import { Navbar } from '../components/Navbar'
+import { Navbar, CalendarEvent } from '../components'
 
 import { localizer } from '../../helpers'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
@@ -47,6 +47,9 @@ export const CalendarPage = () => {
         style={{ height: 'calc( 100vh - 80px)' }}
         messages={getMessagesEs()}
         eventPropGetter={eventStyleGetter}
+        components={{
+          event: CalendarEvent
+        }}
       />
     </>
   )
